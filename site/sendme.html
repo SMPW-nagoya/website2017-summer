@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>わたしがここにおります！わたしを遣わしてください</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<meta name="ROBOTS" content="NOARCHIVE" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<style type="text/css">
+#contents {
+	width:450px;
+	margin:0 auto;
+	color:#666;
+	font-size:100%;
+}
+h1	{font-size:42px;
+	}
+table {
+	border-collapse:collapse;
+}
+td {
+	border:1px solid #ccc;
+	padding:5px;
+	font-size:20px;
+	color:#666;
+}
+td.l_Cel {
+	width:200px;
+}
+</style>
+</head>
+<body>
+<div id="contents">
+  <h2>大都市の特別な奉仕：<br />交代可能登録フォーム</h2>
+  <h3>下記フォームに必要事項を入力後、<br />確認ボタンを押してください。</h3>
+  <form method="post" action="sendme.php">
+    <table cellpadding="5" > 
+    
+         <tr>
+        <td class="l_Cel" colspan="2">○奉仕者情報</td>
+      </tr>
+      <tr>
+        <td class="l_Cel">&nbsp;■奉仕者お名前</td>
+         <td width="200px">
+         <textarea name="奉仕者名" cols="25" rows="1"></textarea></td>
+      </tr>
+    <tr>
+    <td colspan="2"></td>
+    </tr>
+    <tr>
+       <td class="l_Cel" colspan="2">○奉仕可能日</td>
+    </tr>    
+     <tr>
+        <td class="l_Cel">&nbsp;■奉仕可能日</td>
+        <td width="250px">
+         <select name="年">
+			<option value="2017年">2017年</option>
+
+<!-- 
+			<option value="2015年">2015年</option>
+			<option value="2016年">2016年</option>
+			<option value="2017年">2017年</option>
+			<option value="2018年">2018年</option>
+			<option value="2019年">2019年</option>
+			<option value="2020年">2020年</option>
+			<option value="2021年">2021年</option>
+-->
+		</select>
+        <select name="月">
+			<option value="">月</option>
+			<option value="1月">1月</option>
+			<option value="2月">2月</option>
+			<option value="3月">3月</option>
+			<option value="4月">4月</option>
+			<option value="5月">5月</option>
+			<option value="6月">6月</option>
+			<option value="7月">7月</option>
+			<option value="8月">8月</option>
+			<option value="9月">9月</option>
+			<option value="10月">10月</option>
+			<option value="11月">11月</option>
+			<option value="12月">12月</option>
+        </select>
+        <select name="日">
+			<option value="">日</option>
+			<option value="1日">1日</option>
+			<option value="2日">2日</option>
+			<option value="3日">3日</option>
+			<option value="4日">4日</option>
+			<option value="5日">5日</option>
+			<option value="6日">6日</option>
+			<option value="7日">7日</option>
+			<option value="8日">8日</option>
+			<option value="9日">9日</option>
+			<option value="10日">10日</option>
+			<option value="11日">11日</option>
+			<option value="12日">12日</option>
+			<option value="13日">13日</option>
+			<option value="14日">14日</option>
+			<option value="15日">15日</option>
+			<option value="16日">16日</option>
+			<option value="17日">17日</option>
+			<option value="18日">18日</option>
+			<option value="19日">19日</option>
+			<option value="20日">20日</option>
+			<option value="21日">21日</option>
+			<option value="22日">22日</option>
+			<option value="23日">23日</option>
+			<option value="24日">24日</option>
+			<option value="25日">25日</option>
+			<option value="26日">26日</option>
+			<option value="27日">27日</option>
+			<option value="27日">27日</option>
+			<option value="28日">28日</option>
+			<option value="29日">29日</option>
+			<option value="30日">30日</option>
+			<option value="31日">31日</option>
+		</select>
+        </td>
+      </tr>
+      <tr>
+        <td class="l_Cel">&nbsp;■可能な時間帯</td>
+        <td>
+        	可能な時間帯に複数チェックをうっていただけます<br />
+          <input type="checkbox" name="時間帯[]" value="15:00～17:00" />15:00～17:00 <br />
+          <input type="checkbox" name="時間帯[]" value="17:00～19:00" />17:00～19:00 <br />
+          <input type="checkbox" name="時間帯[]" value="16:00～17:30" />16:00～17:30 <br />
+          <input type="checkbox" name="時間帯[]" value="17:30～19:00" />17:30～19:00 <br />
+		
+        </td>
+      </tr>
+      <tr>
+        <td class="l_Cel">&nbsp;■伝達事項</td>
+         <td width="200px">
+         <textarea name="伝達事項" cols="25" rows="4"></textarea></td>
+      </tr>
+    <tr>
+       <td class="l_Cel" colspan="2">○&nbsp;管理者用項目</td>
+    </tr>
+      
+            <tr>
+        <td>■管理者設定欄<br>&nbsp;&nbsp;&nbsp;選択不要です</td>
+        <td><select type"hidden" name="送信先">
+        	<option value="jinzai@smpw-nagoya-jw.org">人材部門に送ります</option><!-- 実際は送信元の事を意味します -->
+        	</select>
+        </td>
+      </tr>
+</table>
+<br>
+    <p>
+      <input type="submit" value="　確認　" />
+      <input type="reset" value="リセット" />
+    </p>
+</br>
+  </form>
+  <p>※SMPW人材部門宛てにメールを送ります。<br />「名前の選択ミス、誤送信」等にご注意ください</p>
+  <a href="index.html">トップページに戻る</a>
+</div>
+<!-- 右側ここまで-->
+</body>
+</html>
